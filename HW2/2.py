@@ -6,7 +6,8 @@
 
 num = int(input("Введите число : "))
 a = 1
+new_list=[]
 for i in range(1, num + 1):
     a *= i
-    print(a, end=" ")
-print()
+    new_list.append(a)   
+print(new_list)
