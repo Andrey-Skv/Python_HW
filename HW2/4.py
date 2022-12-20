@@ -8,13 +8,12 @@
 # -> 20
 
 n = int(input('Введите количество элементов :   '))
-run = range(-n, n+1)
-numbers = list(run)
+numbers = list(range(-n, n+1))
 print(numbers)
+s = int(input('Укажите позицию для вычисления - '))
+d = int(input('Укажите позицию для вычисления - '))
 result = 1
-for i in numbers:
-    print(i)
-    s = input('Укажите позицию для вычисления - ')
-    d = input('Укажите позицию для вычисления - ')
-    result = (s)*(d)
+if len(numbers)>=s>0 and len(numbers)>=d>0:
+    result = numbers[s-1]*numbers[d-1]
 print(f'Произведение чисел под заданными номерами  = {result}')
+
