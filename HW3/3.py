@@ -10,3 +10,12 @@
 # out
 # 1011
 
+
+num = int(input('Введите число для перевода - '))
+nums = []
+while num > 0:
+    d = num % 2
+    nums.append(d)
+    num = num // 2
+    rev=list(reversed(nums))
+print(rev)
